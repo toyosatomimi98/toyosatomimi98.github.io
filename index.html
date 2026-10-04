@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Li Ruiqin · 个人主页</title>
+  <meta name="description" content="Li Ruiqin（toyosatomimi98）的个人主页：新加坡国立大学电子与计算机工程，关注强化学习仿真、语音交互与工程实现。" />
+  <meta name="author" content="Li Ruiqin" />
+
+  <!-- 分享到聊天软件 / 社交平台时显示的卡片信息 -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Li Ruiqin · 个人主页" />
+  <meta property="og:description" content="新加坡国立大学 ECE，做强化学习仿真和实时语音工具。" />
+
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top">Li Ruiqin</a>
+    <nav class="nav" aria-label="主导航">
+      <a href="#about">关于</a>
+      <a href="#work">项目</a>
+      <a href="#contact">联系</a>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="切换深色 / 浅色模式">
+      <span aria-hidden="true">◐</span>
+    </button>
+  </header>
+
+  <main id="main">
+    <!-- ==================== 首屏 ==================== -->
+    <section class="hero" id="top">
+      <!-- 头像直接取自你的 GitHub，换 GitHub 头像这里会自动跟着变。
+           想用本地图片就把 src 改成 assets/me.jpg 并把图片放进 assets/ 文件夹。 -->
+      <div class="avatar" aria-hidden="true">L<img src="https://github.com/toyosatomimi98.png" alt="" onerror="this.remove()" /></div>
+
+      <h1>你好，我是 <span class="accent">Li Ruiqin</span>。</h1>
+
+      <p class="lede">
+        我在新加坡国立大学读电子与计算机工程（ECE）。
+        平时折腾强化学习的仿真环境、跑在自己电脑上的实时语音工具，
+        以及任何能让一个想法更快跑起来的东西。
+      </p>
+
+      <div class="actions">
+        <a class="btn primary" href="https://github.com/toyosatomimi98" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://scholar.google.com/citations?hl=en&amp;user=BTMWZPsAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+        <a class="btn" href="#contact">联系我</a>
+      </div>
+    </section>
+
+    <!-- ==================== 关于 ==================== -->
+    <section class="section" id="about">
+      <h2>关于我</h2>
+      <p>
+        我现在在新加坡国立大学电子与计算机工程系（ECE），感兴趣的方向是
+        <strong>强化学习</strong>、<strong>仿真环境</strong>和<strong>语音交互</strong>。
+        比起追热点，我更喜欢把一件事从头搭到能跑起来：数据从哪来、
+        环境怎么搭、结果怎么验证。
+      </p>
+      <p>
+        业余时间会写一些自己真的会用的小工具，做过的东西基本都放在
+        <a href="https://github.com/toyosatomimi98" target="_blank" rel="noopener">GitHub</a> 上。
+        欢迎交流，尤其是你也在做强化学习、CARLA 或者语音方向的时候。
+      </p>
+    </section>
+
+    <!-- ==================== 项目 ==================== -->
+    <section class="section" id="work">
+      <h2>项目</h2>
+
+      <!-- 想加项目，复制一整个 <li class="card"> … </li> 再改内容即可。 -->
+      <ul class="cards">
+        <li class="card">
+          <div class="card-head">
+            <h3>live-interpreter</h3>
+            <span class="tag">语音</span>
+          </div>
+          <p>
+            一个轻量的实时英译中口译工具：直接听你电脑的麦克风，
+            把听到的英文实时转成中文，全部在本机运行，不依赖云端服务。
+          </p>
+          <div class="card-links">
+            <a href="https://github.com/toyosatomimi98/live-interpreter" target="_blank" rel="noopener">查看代码 →</a>
+          </div>
+        </li>
+
+        <li class="card">
+          <div class="card-head">
+            <h3>CARLA-SB3-RL-Training-Environment</h3>
+            <span class="tag">强化学习</span>
+          </div>
+          <p>
+            基于 CARLA 仿真器和 Stable-Baselines3 的强化学习训练与评估环境，
+            用来快速复现实验、对比不同算法在自动驾驶场景下的表现。
+          </p>
+          <div class="card-links">
+            <a href="https://github.com/toyosatomimi98/CARLA-SB3-RL-Training-Environment" target="_blank" rel="noopener">查看代码 →</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ==================== 联系 ==================== -->
+    <section class="section" id="contact">
+      <h2>联系我</h2>
+      <p>最方便的方式是在 GitHub 上找我，或者发邮件，我基本都会回。</p>
+      <ul class="list">
+        <li>
+          <span class="label">GitHub</span>
+          <a href="https://github.com/toyosatomimi98" target="_blank" rel="noopener">github.com/toyosatomimi98</a>
+        </li>
+        <li>
+          <span class="label">Scholar</span>
+          <a href="https://scholar.google.com/citations?hl=en&amp;user=BTMWZPsAAAAJ" target="_blank" rel="noopener">Google Scholar 主页</a>
+        </li>
+        <li>
+          <span class="label">所在地</span>
+          <span>Singapore</span>
+        </li>
+        <!-- 想公开邮箱，就把下面这段的注释去掉并填上地址：
+        <li>
+          <span class="label">邮箱</span>
+          <a href="mailto:your@email.com">your@email.com</a>
+        </li>
+        -->
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year">2026</span> Li Ruiqin · 用 HTML 和一杯咖啡做的</p>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
