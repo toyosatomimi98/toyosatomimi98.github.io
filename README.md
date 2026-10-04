@@ -26,7 +26,7 @@ python -m http.server 8000
 
 - 想加一个项目：复制一整段 `<li class="card"> … </li>`，改掉里面的标题、说明和链接
 - 想公开邮箱：把「联系我」那节里被注释掉的 `<li>` 取消注释，填上你的地址
-- 想换头像：现在用的是 GitHub 头像（`https://github.com/toyosatomimi98.png`），换个 GitHub 头像就会自动同步；也可以把图片放进 `assets/` 再改 `src`
+- 想换头像：直接用新图片覆盖 `assets/avatar.jpg`（正方形效果最好），不用改代码
 - 想换配色：打开 `assets/style.css`，最上面那几个变量（`--accent` 等）就是主题色
 
 ## 发布到 GitHub Pages
