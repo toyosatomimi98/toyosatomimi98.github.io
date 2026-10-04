@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Li Ruiqin · 个人主页</title>
-  <meta name="description" content="Li Ruiqin（toyosatomimi98）的个人主页：新加坡国立大学电子与计算机工程，关注强化学习仿真、语音交互与工程实现。" />
+  <meta name="description" content="Li Ruiqin（toyosatomimi98）的个人主页：新加坡国立大学电子与计算机工程，研究个性化端到端自动驾驶、强化学习与语音交互。" />
   <meta name="author" content="Li Ruiqin" />
 
   <!-- 分享到聊天软件 / 社交平台时显示的卡片信息 -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Li Ruiqin · 个人主页" />
-  <meta property="og:description" content="新加坡国立大学 ECE，做强化学习仿真和实时语音工具。" />
+  <meta property="og:description" content="新加坡国立大学 ECE，做个性化端到端自动驾驶与实时语音工具。" />
 
   <link rel="stylesheet" href="assets/style.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>" />
@@ -23,6 +23,7 @@
     <a class="brand" href="#top">Li Ruiqin</a>
     <nav class="nav" aria-label="主导航">
       <a href="#about">关于</a>
+      <a href="#papers">论文</a>
       <a href="#work">项目</a>
       <a href="#contact">联系</a>
     </nav>
@@ -41,14 +42,14 @@
       <h1>你好，我是 <span class="accent">Li Ruiqin</span>。</h1>
 
       <p class="lede">
-        我在新加坡国立大学读电子与计算机工程（ECE）。
-        平时折腾强化学习的仿真环境、跑在自己电脑上的实时语音工具，
-        以及任何能让一个想法更快跑起来的东西。
+        我在新加坡国立大学读电子与计算机工程（ECE），
+        研究个性化端到端自动驾驶与强化学习，
+        也喜欢写一些跑在自己电脑上的小工具。
       </p>
 
       <div class="actions">
         <a class="btn primary" href="https://github.com/toyosatomimi98" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn" href="https://scholar.google.com/citations?hl=en&amp;user=BTMWZPsAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+        <a class="btn" href="https://scholar.google.com/citations?user=BtMwZPsAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
         <a class="btn" href="#contact">联系我</a>
       </div>
     </section>
@@ -57,8 +58,8 @@
     <section class="section" id="about">
       <h2>关于我</h2>
       <p>
-        我现在在新加坡国立大学电子与计算机工程系（ECE），感兴趣的方向是
-        <strong>强化学习</strong>、<strong>仿真环境</strong>和<strong>语音交互</strong>。
+        我现在在新加坡国立大学电子与计算机工程系（ECE），关心的是
+        <strong>端到端自动驾驶</strong>、<strong>强化学习</strong>和<strong>语音交互</strong>。
         比起追热点，我更喜欢把一件事从头搭到能跑起来：数据从哪来、
         环境怎么搭、结果怎么验证。
       </p>
@@ -67,6 +68,39 @@
         <a href="https://github.com/toyosatomimi98" target="_blank" rel="noopener">GitHub</a> 上。
         欢迎交流，尤其是你也在做强化学习、CARLA 或者语音方向的时候。
       </p>
+    </section>
+
+    <!-- ==================== 论文 ==================== -->
+    <section class="section" id="papers">
+      <h2>论文</h2>
+
+      <ul class="cards">
+        <li class="card">
+          <div class="card-head">
+            <h3 class="paper-title">
+              <a href="https://arxiv.org/abs/2602.18757" target="_blank" rel="noopener">
+                Driving Like Yourself: A Benchmark for Closed-Loop Personalized End-to-End Autonomous Driving
+              </a>
+            </h3>
+            <span class="tag">2026</span>
+          </div>
+          <p class="authors">
+            Xiaoru Dong, <strong>Ruiqin Li</strong>, Xiao Han, Zhenxuan Wu, Jiamin Wang,
+            Jian Chen, Qi Jiang, S. M. Yiu, Xinge Zhu, Yuexin Ma
+          </p>
+          <p>
+            提出 Person2Drive：一套个性化端到端自动驾驶的基准与平台。它包含可扩展的个性化
+            驾驶数据采集系统、用 MMD 与 KL 散度量化个人驾驶风格的评估指标，以及一个
+            只微调轨迹预测头就能完成个性化的框架——保留预训练主干，在保证安全的前提下
+            让模型学会「像你一样开车」。
+          </p>
+          <div class="card-links">
+            <a href="https://arxiv.org/abs/2602.18757" target="_blank" rel="noopener">arXiv:2602.18757</a>
+            <span class="dot">·</span>
+            <a href="https://scholar.google.com/citations?user=BtMwZPsAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+          </div>
+        </li>
+      </ul>
     </section>
 
     <!-- ==================== 项目 ==================== -->
@@ -116,7 +150,7 @@
         </li>
         <li>
           <span class="label">Scholar</span>
-          <a href="https://scholar.google.com/citations?hl=en&amp;user=BTMWZPsAAAAJ" target="_blank" rel="noopener">Google Scholar 主页</a>
+          <a href="https://scholar.google.com/citations?user=BtMwZPsAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar 主页</a>
         </li>
         <li>
           <span class="label">所在地</span>

@@ -265,6 +265,20 @@ h3 {
 
 .card-links { font-size: 15px; }
 
+.card-links .dot {
+  margin: 0 6px;
+  color: var(--text-soft);
+}
+
+.paper-title { font-size: 17px; line-height: 1.5; }
+.paper-title a { color: var(--text); }
+.paper-title a:hover { color: var(--accent); }
+
+.authors {
+  font-size: 15px !important;
+  color: var(--text-soft);
+}
+
 .tag {
   padding: 2px 9px;
   border-radius: 999px;
