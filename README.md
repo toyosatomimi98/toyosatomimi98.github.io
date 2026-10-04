@@ -34,6 +34,15 @@ python -m http.server 8000
 
 文字全部写在 `index.html` 里，用一个浏览器或编辑器打开就能改，改完刷新页面即可看到。
 
+## 中英文两个版本
+
+- `index.html` — 中文版，网址是 https://toyosatomimi98.github.io/
+- `en/index.html` — 英文版，网址是 https://toyosatomimi98.github.io/en/
+
+页面右上角的「中 / EN」按钮就是在这两个文件之间跳转。它们是两个独立的 HTML，
+改内容时记得两边都改，不会自动同步。样式、头像、水印都复用 `assets/` 里的同一套文件，
+所以改配色或换图只需要动一次。
+
 - 想加一个项目：复制一整段 `<li class="card"> … </li>`，改掉里面的标题、说明和链接
 - 邮箱现在公开在页面上（`liruiqin@u.nus.edu`）。如果以后被爬虫骚扰，可以改成图片或 JavaScript 拼接的写法
 - 想换头像：直接用新图片覆盖 `assets/avatar.jpg`（正方形效果最好），不用改代码

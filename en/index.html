@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ruiqin Li · Homepage</title>
+  <meta name="description" content="Ruiqin Li (toyosatomimi98) — Electrical and Computer Engineering at the National University of Singapore. Currently learning autonomous driving, augmented reality, reinforcement learning and embodied AI." />
+  <meta name="author" content="Ruiqin Li" />
+
+  <!-- Card shown when the link is shared -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ruiqin Li · Homepage" />
+  <meta property="og:description" content="ECE at the National University of Singapore. Currently learning autonomous driving, augmented reality, reinforcement learning and embodied AI." />
+  <meta property="og:locale" content="en" />
+
+  <!-- Tells search engines these two URLs are the same page in two languages -->
+  <link rel="alternate" hreflang="zh-CN" href="https://toyosatomimi98.github.io/" />
+  <link rel="alternate" hreflang="en" href="https://toyosatomimi98.github.io/en/" />
+
+  <link rel="stylesheet" href="../assets/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Background watermark: full viewport height, fixed while scrolling.
+       Replace assets/watermark.webp to change the image; tune --watermark-opacity in style.css -->
+  <div class="watermark" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top">Ruiqin Li</a>
+    <nav class="nav" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#papers">Papers</a>
+      <a href="#work">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="lang-switch" aria-label="Language">
+      <a href="../index.html" hreflang="zh-CN" lang="zh-CN">中</a>
+      <span class="is-active" aria-current="true">EN</span>
+    </div>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch between dark and light mode">
+      <span aria-hidden="true">◐</span>
+    </button>
+  </header>
+
+  <main id="main">
+    <!-- ==================== Hero ==================== -->
+    <section class="hero" id="top">
+      <!-- Local copy of the GitHub avatar; overwrite assets/avatar.jpg to change it. -->
+      <div class="avatar" aria-hidden="true">L<img src="../assets/avatar.jpg" alt="" onerror="this.remove()" /></div>
+
+      <h1>Hi, I'm <span class="accent">Ruiqin Li</span>.</h1>
+
+      <p class="lede">
+        I'm studying Electrical and Computer Engineering (ECE) at the National University of Singapore.
+        Right now I'm learning autonomous driving, augmented reality, reinforcement learning
+        and embodied AI.
+      </p>
+
+      <div class="actions">
+        <a class="btn primary" href="mailto:liruiqin@u.nus.edu">Email me</a>
+        <a class="btn" href="https://github.com/toyosatomimi98" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://scholar.google.com/citations?user=BtMwZPsAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+      </div>
+    </section>
+
+    <!-- ==================== About ==================== -->
+    <section class="section" id="about">
+      <h2>About</h2>
+      <p>
+        I'm at the Department of Electrical and Computer Engineering (ECE) at the National University
+        of Singapore, currently learning <strong>autonomous driving</strong>,
+        <strong>augmented reality</strong>, <strong>reinforcement learning</strong> and
+        <strong>embodied AI</strong>.
+      </p>
+      <p>
+        In my spare time I build small tools I actually use; most of what I've made is on
+        <a href="https://github.com/toyosatomimi98" target="_blank" rel="noopener">GitHub</a>.
+      </p>
+    </section>
+
+    <!-- ==================== Papers ==================== -->
+    <section class="section" id="papers">
+      <h2>Papers</h2>
+
+      <ul class="cards">
+        <li class="card">
+          <div class="card-head">
+            <h3 class="paper-title">
+              <a href="https://arxiv.org/abs/2602.18757" target="_blank" rel="noopener">
+                Driving Like Yourself: A Benchmark for Closed-Loop Personalized End-to-End Autonomous Driving
+              </a>
+            </h3>
+            <span class="tag">2026</span>
+          </div>
+          <p class="authors">
+            Xiaoru Dong, <strong>Ruiqin Li</strong>, Xiao Han, Zhenxuan Wu, Jiamin Wang,
+            Jian Chen, Qi Jiang, S. M. Yiu, Xinge Zhu, Yuexin Ma
+          </p>
+          <p>
+            Person2Drive is a benchmark and platform for personalized end-to-end autonomous driving.
+            It comes with a data collection system for building personalized driving datasets, metrics
+            based on MMD and KL divergence for quantifying individual driving styles, and a
+            personalization framework that fine-tunes only the trajectory prediction head — so the
+            pretrained backbone stays intact and driving performance is preserved.
+          </p>
+          <div class="card-links">
+            <a href="https://arxiv.org/abs/2602.18757" target="_blank" rel="noopener">arXiv:2602.18757</a>
+            <span class="dot">·</span>
+            <a href="https://scholar.google.com/citations?user=BtMwZPsAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ==================== Projects ==================== -->
+    <section class="section" id="work">
+      <h2>Projects</h2>
+
+      <ul class="cards">
+        <li class="card">
+          <div class="card-head">
+            <h3>live-interpreter</h3>
+            <span class="tag">Speech</span>
+          </div>
+          <p>
+            A lightweight real-time English to Chinese interpreter. It listens to your microphone and
+            translates as you speak, entirely on your own machine — no cloud service involved.
+          </p>
+          <div class="card-links">
+            <a href="https://github.com/toyosatomimi98/live-interpreter" target="_blank" rel="noopener">View code →</a>
+          </div>
+        </li>
+
+        <li class="card">
+          <div class="card-head">
+            <h3>CARLA-SB3-RL-Training-Environment</h3>
+            <span class="tag">Reinforcement learning</span>
+          </div>
+          <p>
+            A reinforcement learning training and evaluation environment built on the CARLA simulator
+            and Stable-Baselines3, for quickly reproducing experiments and comparing algorithms in
+            driving scenarios.
+          </p>
+          <div class="card-links">
+            <a href="https://github.com/toyosatomimi98/CARLA-SB3-RL-Training-Environment" target="_blank" rel="noopener">View code →</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ==================== Contact ==================== -->
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <ul class="list">
+        <li>
+          <span class="label">Email</span>
+          <a href="mailto:liruiqin@u.nus.edu">liruiqin@u.nus.edu</a>
+        </li>
+        <li>
+          <span class="label">GitHub</span>
+          <a href="https://github.com/toyosatomimi98" target="_blank" rel="noopener">github.com/toyosatomimi98</a>
+        </li>
+        <li>
+          <span class="label">Scholar</span>
+          <a href="https://scholar.google.com/citations?user=BtMwZPsAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar profile</a>
+        </li>
+        <li>
+          <span class="label">Based in</span>
+          <span>Singapore</span>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year">2026</span> Ruiqin Li</p>
+  </footer>
+
+  <script src="../assets/main.js"></script>
+</body>
+</html>
