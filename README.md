@@ -37,6 +37,7 @@ python -m http.server 8000
 - 想加一个项目：复制一整段 `<li class="card"> … </li>`，改掉里面的标题、说明和链接
 - 邮箱现在公开在页面上（`liruiqin@u.nus.edu`）。如果以后被爬虫骚扰，可以改成图片或 JavaScript 拼接的写法
 - 想换头像：直接用新图片覆盖 `assets/avatar.jpg`（正方形效果最好），不用改代码
+- 想换水印：用新图片覆盖 `assets/watermark.webp`；深浅改 `assets/style.css` 里的 `--watermark-opacity`（默认 0.07，数字越小越淡）
 - 想换配色：打开 `assets/style.css`，最上面那几个变量（`--accent` 等）就是主题色
 
 ## 发布到 GitHub Pages
