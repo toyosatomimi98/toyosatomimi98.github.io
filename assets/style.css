@@ -193,13 +193,13 @@ main {
   position: relative;
   display: grid;
   place-items: center;
-  width: 76px;
-  height: 76px;
+  width: 112px;
+  height: 112px;
   margin-bottom: 26px;
   border-radius: 50%;
   background: var(--accent-soft);
   color: var(--accent);
-  font-size: 30px;
+  font-size: 44px;
   font-weight: 600;
   overflow: hidden;
 }
@@ -430,6 +430,12 @@ h3 {
   .nav a { white-space: nowrap; }
 
   .lang-switch { margin-left: auto; }
+
+  .avatar {
+    width: 92px;
+    height: 92px;
+    font-size: 36px;
+  }
 
   main, .site-footer { padding-left: 18px; padding-right: 18px; }
   .hero { padding: 36px 0 44px; }
