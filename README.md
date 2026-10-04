@@ -20,15 +20,33 @@ python -m http.server 8000
 
 然后打开 http://localhost:8000
 
-## 你要改的地方
+## 内容在哪里
 
-在 `index.html` 里搜索“你的名字”“your@email.com”“yourname”，全部替换成你自己的信息即可。
-文件里有 `<!-- ========== 需要你修改的地方 ========== -->` 这样的注释标记，照着改不会漏。
+文字全部写在 `index.html` 里，用一个浏览器或编辑器打开就能改，改完刷新页面即可看到。
+
+- 想加一个项目：复制一整段 `<li class="card"> … </li>`，改掉里面的标题、说明和链接
+- 想公开邮箱：把「联系我」那节里被注释掉的 `<li>` 取消注释，填上你的地址
+- 想换头像：现在用的是 GitHub 头像（`https://github.com/toyosatomimi98.png`），换个 GitHub 头像就会自动同步；也可以把图片放进 `assets/` 再改 `src`
+- 想换配色：打开 `assets/style.css`，最上面那几个变量（`--accent` 等）就是主题色
 
 ## 发布到 GitHub Pages
 
-见下方步骤，或直接把本仓库推送上去后在仓库 Settings → Pages 里选择 `main` 分支根目录。
+仓库名必须是 `toyosatomimi98.github.io`，推送完成后 GitHub 会自动开启 Pages，无需任何额外设置。
 
-1. 在 GitHub 新建仓库，名字必须是 `<你的用户名>.github.io`
-2. 把本目录的内容 push 到该仓库的 `main` 分支
-3. 等 1 分钟左右，访问 `https://<你的用户名>.github.io`
+1. 在 GitHub 新建仓库，名字填 `toyosatomimi98.github.io`，选 Public，不要勾选 Add a README
+2. 在本目录执行：
+
+```bash
+git remote add origin https://github.com/toyosatomimi98/toyosatomimi98.github.io.git
+git push -u origin main
+```
+
+3. 等 1—2 分钟，访问 https://toyosatomimi98.github.io
+
+以后更新内容只要三步：
+
+```bash
+git add -A
+git commit -m "更新内容"
+git push
+```
