@@ -36,11 +36,12 @@ python -m http.server 8000
 
 ## 中英文两个版本
 
-- `index.html` — 中文版，网址是 https://toyosatomimi98.github.io/
-- `en/index.html` — 英文版，网址是 https://toyosatomimi98.github.io/en/
+- `index.html` — 英文版，也是默认版，网址是 https://toyosatomimi98.github.io/
+- `zh/index.html` — 中文版，网址是 https://toyosatomimi98.github.io/zh/
 
-页面右上角的「中 / EN」按钮就是在这两个文件之间跳转。它们是两个独立的 HTML，
-改内容时记得两边都改，不会自动同步。样式、头像、水印都复用 `assets/` 里的同一套文件，
+直接访问域名（或分享不带路径的链接）看到的是英文版。页面右上角的「中 / EN」
+按钮就是在这两个文件之间跳转。它们是两个独立的 HTML，改内容时记得两边都改，
+不会自动同步。样式、头像、水印都复用 `assets/` 里的同一套文件，
 所以改配色或换图只需要动一次。
 
 - 想加一个项目：复制一整段 `<li class="card"> … </li>`，改掉里面的标题、说明和链接

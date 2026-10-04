@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Li Ruiqin · 个人主页</title>
+  <meta name="description" content="Li Ruiqin（toyosatomimi98）的个人主页：新加坡国立大学电子与计算机工程，正在学习自动驾驶、增强现实、强化学习与具身智能。" />
+  <meta name="author" content="Li Ruiqin" />
+
+  <!-- 分享到聊天软件 / 社交平台时显示的卡片信息 -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Li Ruiqin · 个人主页" />
+  <meta property="og:description" content="新加坡国立大学 ECE，正在学习自动驾驶、增强现实、强化学习与具身智能。" />
+  <meta property="og:locale" content="zh_CN" />
+
+  <!-- 告诉搜索引擎这两版是同一页面的中英文版本，默认版是英文 -->
+  <link rel="alternate" hreflang="en" href="https://toyosatomimi98.github.io/" />
+  <link rel="alternate" hreflang="zh-CN" href="https://toyosatomimi98.github.io/zh/" />
+  <link rel="alternate" hreflang="x-default" href="https://toyosatomimi98.github.io/" />
+
+  <link rel="stylesheet" href="../assets/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+
+  <!-- 背景水印：高度贴合浏览器可视高度，滚动时固定不动。
+       想换图就覆盖 assets/watermark.webp；想调深浅改 style.css 里的 --watermark-opacity -->
+  <div class="watermark" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top">Li Ruiqin</a>
+    <nav class="nav" aria-label="主导航">
+      <a href="#about">关于</a>
+      <a href="#papers">论文</a>
+      <a href="#work">项目</a>
+      <a href="#contact">联系</a>
+    </nav>
+    <div class="lang-switch" aria-label="语言">
+      <span class="is-active" aria-current="true">中</span>
+      <a href="../index.html" hreflang="en" lang="en">EN</a>
+    </div>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="切换深色 / 浅色模式">
+      <span aria-hidden="true">◐</span>
+    </button>
+  </header>
+
+  <main id="main">
+    <!-- ==================== 首屏 ==================== -->
+    <section class="hero" id="top">
+      <!-- 头像是从你的 GitHub 头像存下来的一份本地副本，放在 assets/avatar.jpg。
+           想换头像就把新图片覆盖成这个文件名即可（正方形效果最好）。 -->
+      <div class="avatar" aria-hidden="true">L<img src="../assets/avatar.jpg" alt="" onerror="this.remove()" /></div>
+
+      <h1>你好，我是 <span class="accent">Li Ruiqin</span>。</h1>
+
+      <p class="lede">
+        我在新加坡国立大学读电子与计算机工程（ECE），
+        正在学习自动驾驶、增强现实、强化学习和具身智能。
+      </p>
+
+      <div class="actions">
+        <a class="btn primary" href="mailto:liruiqin@u.nus.edu">发邮件给我</a>
+        <a class="btn" href="https://github.com/toyosatomimi98" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://scholar.google.com/citations?user=BtMwZPsAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+      </div>
+    </section>
+
+    <!-- ==================== 关于 ==================== -->
+    <section class="section" id="about">
+      <h2>关于我</h2>
+      <p>
+        我现在在新加坡国立大学电子与计算机工程系（ECE），正在学习
+        <strong>自动驾驶</strong>、<strong>增强现实</strong>、
+        <strong>强化学习</strong>和<strong>具身智能</strong>。
+      </p>
+      <p>
+        业余时间会写一些自己真的会用的小工具，做过的东西基本都放在
+        <a href="https://github.com/toyosatomimi98" target="_blank" rel="noopener">GitHub</a> 上。
+      </p>
+    </section>
+
+    <!-- ==================== 论文 ==================== -->
+    <section class="section" id="papers">
+      <h2>论文</h2>
+
+      <ul class="cards">
+        <li class="card">
+          <div class="card-head">
+            <h3 class="paper-title">
+              <a href="https://arxiv.org/abs/2602.18757" target="_blank" rel="noopener">
+                Driving Like Yourself: A Benchmark for Closed-Loop Personalized End-to-End Autonomous Driving
+              </a>
+            </h3>
+            <span class="tag">2026</span>
+          </div>
+          <p class="authors">
+            Xiaoru Dong, <strong>Ruiqin Li</strong>, Xiao Han, Zhenxuan Wu, Jiamin Wang,
+            Jian Chen, Qi Jiang, S. M. Yiu, Xinge Zhu, Yuexin Ma
+          </p>
+          <p>
+            提出 Person2Drive：一套个性化端到端自动驾驶的基准与平台。它包含可扩展的个性化
+            驾驶数据采集系统、用 MMD 与 KL 散度量化个人驾驶风格的评估指标，以及一个
+            只微调轨迹预测头就能完成个性化的框架——保留预训练主干，在保证安全的前提下
+            让模型学会「像你一样开车」。
+          </p>
+          <div class="card-links">
+            <a href="https://arxiv.org/abs/2602.18757" target="_blank" rel="noopener">arXiv:2602.18757</a>
+            <span class="dot">·</span>
+            <a href="https://scholar.google.com/citations?user=BtMwZPsAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ==================== 项目 ==================== -->
+    <section class="section" id="work">
+      <h2>项目</h2>
+
+      <!-- 想加项目，复制一整个 <li class="card"> … </li> 再改内容即可。 -->
+      <ul class="cards">
+        <li class="card">
+          <div class="card-head">
+            <h3>live-interpreter</h3>
+            <span class="tag">语音</span>
+          </div>
+          <p>
+            一个轻量的实时英译中口译工具：直接听你电脑的麦克风，
+            把听到的英文实时转成中文，全部在本机运行，不依赖云端服务。
+          </p>
+          <div class="card-links">
+            <a href="https://github.com/toyosatomimi98/live-interpreter" target="_blank" rel="noopener">查看代码 →</a>
+          </div>
+        </li>
+
+        <li class="card">
+          <div class="card-head">
+            <h3>CARLA-SB3-RL-Training-Environment</h3>
+            <span class="tag">强化学习</span>
+          </div>
+          <p>
+            基于 CARLA 仿真器和 Stable-Baselines3 的强化学习训练与评估环境，
+            用来快速复现实验、对比不同算法在自动驾驶场景下的表现。
+          </p>
+          <div class="card-links">
+            <a href="https://github.com/toyosatomimi98/CARLA-SB3-RL-Training-Environment" target="_blank" rel="noopener">查看代码 →</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ==================== 联系 ==================== -->
+    <section class="section" id="contact">
+      <h2>联系我</h2>
+      <ul class="list">
+        <li>
+          <span class="label">邮箱</span>
+          <a href="mailto:liruiqin@u.nus.edu">liruiqin@u.nus.edu</a>
+        </li>
+        <li>
+          <span class="label">GitHub</span>
+          <a href="https://github.com/toyosatomimi98" target="_blank" rel="noopener">github.com/toyosatomimi98</a>
+        </li>
+        <li>
+          <span class="label">Scholar</span>
+          <a href="https://scholar.google.com/citations?user=BtMwZPsAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar 主页</a>
+        </li>
+        <li>
+          <span class="label">所在地</span>
+          <span>Singapore</span>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year">2026</span> Li Ruiqin</p>
+  </footer>
+
+  <script src="../assets/main.js"></script>
+</body>
+</html>
