@@ -50,6 +50,21 @@ python -m http.server 8000
 - 想换水印：用新图片覆盖 `assets/watermark.webp`；深浅改 `assets/style.css` 里的 `--watermark-opacity`（默认 0.07，数字越小越淡）
 - 想换配色：打开 `assets/style.css`，最上面那几个变量（`--accent` 等）就是主题色
 
+## 博客
+
+- `blog/index.html` — 文章列表页，网址是 https://toyosatomimi98.github.io/blog/
+- `blog/post-template.html` — 文章模板，平时不用动它
+
+写一篇新文章：
+
+1. 复制 `blog/post-template.html`，改名成 `blog/2026-10-05-my-first-post.html`
+   （日期 + 简短英文标题，中间用连字符，这个名字就是将来的网址）
+2. 打开新文件，按里面 ①②③ 三处注释改标题、日期和正文
+3. 打开 `blog/index.html`，把里面注释掉的列表段取消注释，照格式加一条「标题 + 日期」
+
+文章写中文还是英文都行，两种可以混在同一个列表里。首页顶部导航的「Blog / 博客」
+指的就是这个列表页。
+
 ## 发布到 GitHub Pages
 
 仓库名必须是 `toyosatomimi98.github.io`，推送完成后 GitHub 会自动开启 Pages，无需任何额外设置。
