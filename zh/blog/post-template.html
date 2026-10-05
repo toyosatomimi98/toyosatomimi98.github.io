@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ① 改成文章标题。浏览器标签和搜索结果都用它。 -->
+  <title>文章标题 · Li Ruiqin</title>
+  <meta name="description" content="一句话说明这篇写了什么。" />
+  <meta name="author" content="Li Ruiqin" />
+
+  <link rel="stylesheet" href="../../assets/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌴</text></svg>" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+
+  <div class="watermark" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="../index.html">Li Ruiqin</a>
+    <nav class="nav" aria-label="主导航">
+      <a href="../index.html#about">关于</a>
+      <a href="../index.html#papers">论文</a>
+      <a href="../index.html#work">项目</a>
+      <a href="index.html">博客</a>
+      <a href="../index.html#contact">联系</a>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="切换深色 / 浅色模式">
+      <span aria-hidden="true">◐</span>
+    </button>
+  </header>
+
+  <main id="main">
+    <article class="post">
+      <header class="post-head">
+        <!-- ② 这里写标题和日期 -->
+        <h1>文章标题</h1>
+        <p class="post-date">2026-10-05</p>
+      </header>
+
+      <!-- ③ 正文写在这个 div 里。段落用 <p>，
+           小标题用 <h2>，列表用 <ul><li>，代码用 <code>，
+           引用用 <blockquote>，图片用 <img src="..." alt="..."> -->
+      <div class="post-body">
+        <p>第一段。写你真正想说的话，不用管篇幅。</p>
+
+        <h2>一个小标题</h2>
+        <p>继续写。</p>
+
+        <ul>
+          <li>要点一</li>
+          <li>要点二</li>
+        </ul>
+      </div>
+
+      <p class="post-back"><a href="index.html">← 回到文章列表</a></p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year">2026</span> Li Ruiqin</p>
+  </footer>
+
+  <script src="../../assets/main.js"></script>
+</body>
+</html>

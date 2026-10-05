@@ -52,18 +52,24 @@ python -m http.server 8000
 
 ## 博客
 
-- `blog/index.html` — 文章列表页，网址是 https://toyosatomimi98.github.io/blog/
-- `blog/post-template.html` — 文章模板，平时不用动它
+英文和中文各有一个博客栏目，互不影响：
+
+- `blog/` — 英文博客，网址是 https://toyosatomimi98.github.io/blog/
+- `zh/blog/` — 中文博客，网址是 https://toyosatomimi98.github.io/zh/blog/
+
+两边各有一个 `post-template.html` 文章模板，平时不用动它。首页导航里的
+「Blog」和「博客」分别指向对应的那个列表页；博客页右上角的「中 / EN」
+可以在两个博客之间切换。
 
 写一篇新文章：
 
-1. 复制 `blog/post-template.html`，改名成 `blog/2026-10-05-my-first-post.html`
-   （日期 + 简短英文标题，中间用连字符，这个名字就是将来的网址）
+1. 复制对应目录下的 `post-template.html`，改名成 `2026-10-05-my-first-post.html`
+   （文件名 = 日期 + 简短英文标题，中间用连字符，它就是将来的网址。中文文章放
+   `zh/blog/`，英文放 `blog/`）
 2. 打开新文件，按里面 ①②③ 三处注释改标题、日期和正文
-3. 打开 `blog/index.html`，把里面注释掉的列表段取消注释，照格式加一条「标题 + 日期」
+3. 打开同目录的 `index.html`，把里面注释掉的列表段取消注释，照格式加一条「标题 + 日期」
 
-文章写中文还是英文都行，两种可以混在同一个列表里。首页顶部导航的「Blog / 博客」
-指的就是这个列表页。
+一篇文章只属于一个语言，不用两边都写；写哪边就放哪个目录。
 
 ## 发布到 GitHub Pages
 
