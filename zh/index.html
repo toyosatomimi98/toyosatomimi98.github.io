@@ -89,7 +89,7 @@
       <h2>论文</h2>
 
       <ul class="cards">
-        <li class="card card-paper">
+        <li class="card card-media">
           <div class="card-head">
             <h3 class="paper-title">
               <a href="https://arxiv.org/abs/2602.18757" target="_blank" rel="noopener">
@@ -99,7 +99,7 @@
             <span class="tag">ECCV 2026</span>
           </div>
 
-          <div class="paper-text">
+          <div class="card-text">
             <p class="authors">
               Xiaoru Dong, <strong>Ruiqin Li</strong>, Xiao Han, Zhenxuan Wu, Jiamin Wang,
               Jian Chen, Qi Jiang, S. M. Yiu, Xinge Zhu, Yuexin Ma
@@ -118,7 +118,7 @@
           </div>
 
           <!-- 论文主图：取自 arXiv 上的 Figure 1，点击可打开原文 -->
-          <figure class="paper-figure">
+          <figure class="card-figure">
             <a href="https://arxiv.org/abs/2602.18757" target="_blank" rel="noopener">
               <img src="../assets/person2drive-framework.jpg"
                    alt="Person2Drive 框架总览：个性化驾驶数据采集、驾驶风格建模，以及端到端模型的风格微调。" />
@@ -135,32 +135,54 @@
 
       <!-- 想加项目，复制一整个 <li class="card"> … </li> 再改内容即可。 -->
       <ul class="cards">
-        <li class="card">
+        <li class="card card-media">
           <div class="card-head">
             <h3>live-interpreter</h3>
             <span class="tag">语音</span>
           </div>
-          <p>
-            一个轻量的实时英译中口译工具：直接听你电脑的麦克风，
-            把听到的英文实时转成中文，全部在本机运行，不依赖云端服务。
-          </p>
-          <div class="card-links">
-            <a href="https://github.com/toyosatomimi98/live-interpreter" target="_blank" rel="noopener">查看代码 →</a>
+
+          <div class="card-text">
+            <p>
+              一个轻量的实时英译中口译工具：直接调用你电脑的麦克风，
+              把听到的英文实时转成中文，全部在本机运行，不依赖云端服务。
+            </p>
+            <div class="card-links">
+              <a href="https://github.com/toyosatomimi98/live-interpreter" target="_blank" rel="noopener">查看代码 →</a>
+            </div>
           </div>
+
+          <figure class="card-figure">
+            <a href="https://github.com/toyosatomimi98/live-interpreter" target="_blank" rel="noopener">
+              <img src="../assets/live-interpreter-demo.jpg"
+                   alt="口译工具运行时的截图：英文新闻直播画面，右侧是实时生成的中文字幕。" />
+            </a>
+            <figcaption>在英文新闻直播上实时转译。</figcaption>
+          </figure>
         </li>
 
-        <li class="card">
+        <li class="card card-media">
           <div class="card-head">
             <h3>CARLA-SB3-RL-Training-Environment</h3>
             <span class="tag">强化学习</span>
           </div>
-          <p>
-            基于 CARLA 仿真器和 Stable-Baselines3 的强化学习训练与评估环境，
-            用来快速复现实验、对比不同算法在自动驾驶场景下的表现。
-          </p>
-          <div class="card-links">
-            <a href="https://github.com/toyosatomimi98/CARLA-SB3-RL-Training-Environment" target="_blank" rel="noopener">查看代码 →</a>
+
+          <div class="card-text">
+            <p>
+              基于 CARLA 仿真器和 Stable-Baselines3 的强化学习训练与评估环境，
+              用来快速复现实验、对比不同算法在自动驾驶场景下的表现。
+            </p>
+            <div class="card-links">
+              <a href="https://github.com/toyosatomimi98/CARLA-SB3-RL-Training-Environment" target="_blank" rel="noopener">查看代码 →</a>
+            </div>
           </div>
+
+          <figure class="card-figure">
+            <a href="https://github.com/toyosatomimi98/CARLA-SB3-RL-Training-Environment" target="_blank" rel="noopener">
+              <img src="../assets/carla-rl-hud.jpg"
+                   alt="CARLA 仿真器中强化学习训练时的截图，包含驾驶视角和评估 HUD。" />
+            </a>
+            <figcaption>在 CARLA 仿真器中训练，左侧是评估 HUD。</figcaption>
+          </figure>
         </li>
       </ul>
     </section>

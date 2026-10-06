@@ -90,7 +90,7 @@
       <h2>Papers</h2>
 
       <ul class="cards">
-        <li class="card card-paper">
+        <li class="card card-media">
           <div class="card-head">
             <h3 class="paper-title">
               <a href="https://arxiv.org/abs/2602.18757" target="_blank" rel="noopener">
@@ -100,7 +100,7 @@
             <span class="tag">ECCV 2026</span>
           </div>
 
-          <div class="paper-text">
+          <div class="card-text">
             <p class="authors">
               Xiaoru Dong, <strong>Ruiqin Li</strong>, Xiao Han, Zhenxuan Wu, Jiamin Wang,
               Jian Chen, Qi Jiang, S. M. Yiu, Xinge Zhu, Yuexin Ma
@@ -120,7 +120,7 @@
           </div>
 
           <!-- 论文主图：取自 arXiv 上的 Figure 1，点击可打开原文 -->
-          <figure class="paper-figure">
+          <figure class="card-figure">
             <a href="https://arxiv.org/abs/2602.18757" target="_blank" rel="noopener">
               <img src="assets/person2drive-framework.jpg"
                    alt="Person2Drive framework: personal driving data collection, driving style modelling, and fine-tuning of an end-to-end model." />
@@ -136,33 +136,55 @@
       <h2>Projects</h2>
 
       <ul class="cards">
-        <li class="card">
+        <li class="card card-media">
           <div class="card-head">
             <h3>live-interpreter</h3>
             <span class="tag">Speech</span>
           </div>
-          <p>
-            A lightweight real-time English to Chinese interpreter. It listens to your microphone and
-            translates as you speak, entirely on your own machine — no cloud service involved.
-          </p>
-          <div class="card-links">
-            <a href="https://github.com/toyosatomimi98/live-interpreter" target="_blank" rel="noopener">View code →</a>
+
+          <div class="card-text">
+            <p>
+              A lightweight real-time English to Chinese interpreter. It listens to your microphone and
+              translates as you speak, entirely on your own machine — no cloud service involved.
+            </p>
+            <div class="card-links">
+              <a href="https://github.com/toyosatomimi98/live-interpreter" target="_blank" rel="noopener">View code →</a>
+            </div>
           </div>
+
+          <figure class="card-figure">
+            <a href="https://github.com/toyosatomimi98/live-interpreter" target="_blank" rel="noopener">
+              <img src="assets/live-interpreter-demo.jpg"
+                   alt="The interpreter running on an English news broadcast, with Chinese subtitles generated in real time." />
+            </a>
+            <figcaption>Running on a live news broadcast.</figcaption>
+          </figure>
         </li>
 
-        <li class="card">
+        <li class="card card-media">
           <div class="card-head">
             <h3>CARLA-SB3-RL-Training-Environment</h3>
             <span class="tag">Reinforcement learning</span>
           </div>
-          <p>
-            A reinforcement learning training and evaluation environment built on the CARLA simulator
-            and Stable-Baselines3, for quickly reproducing experiments and comparing algorithms in
-            driving scenarios.
-          </p>
-          <div class="card-links">
-            <a href="https://github.com/toyosatomimi98/CARLA-SB3-RL-Training-Environment" target="_blank" rel="noopener">View code →</a>
+
+          <div class="card-text">
+            <p>
+              A reinforcement learning training and evaluation environment built on the CARLA simulator
+              and Stable-Baselines3, for quickly reproducing experiments and comparing algorithms in
+              driving scenarios.
+            </p>
+            <div class="card-links">
+              <a href="https://github.com/toyosatomimi98/CARLA-SB3-RL-Training-Environment" target="_blank" rel="noopener">View code →</a>
+            </div>
           </div>
+
+          <figure class="card-figure">
+            <a href="https://github.com/toyosatomimi98/CARLA-SB3-RL-Training-Environment" target="_blank" rel="noopener">
+              <img src="assets/carla-rl-hud.jpg"
+                   alt="The CARLA simulator during reinforcement learning training, showing the driving view and the evaluation HUD." />
+            </a>
+            <figcaption>Training inside CARLA, with the evaluation HUD.</figcaption>
+          </figure>
         </li>
       </ul>
     </section>

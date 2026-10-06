@@ -337,8 +337,8 @@ h3 {
 .paper-title a { color: var(--text); }
 .paper-title a:hover { color: var(--accent); }
 
-/* 论文卡片：文字在左，主图在右 */
-.card-paper {
+/* 带主图的卡片（论文、项目）：标题占整行，文字在左，主图在右 */
+.card-media {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 280px;
   grid-template-areas:
@@ -348,13 +348,13 @@ h3 {
   align-items: start;
 }
 
-.card-paper .card-head { grid-area: head; margin-bottom: 0; }
-.card-paper .paper-text { grid-area: text; }
-.card-paper .paper-figure { grid-area: figure; }
+.card-media .card-head { grid-area: head; margin-bottom: 0; }
+.card-media .card-text { grid-area: text; }
+.card-media .card-figure { grid-area: figure; }
 
-.paper-figure { margin: 0; }
+.card-figure { margin: 0; }
 
-.paper-figure img {
+.card-figure img {
   display: block;
   width: 100%;
   height: auto;
@@ -363,7 +363,7 @@ h3 {
   background: #fff;
 }
 
-.paper-figure figcaption {
+.card-figure figcaption {
   margin-top: 8px;
   color: var(--text-soft);
   font-size: 13px;
@@ -371,7 +371,7 @@ h3 {
 }
 
 @media (max-width: 720px) {
-  .card-paper {
+  .card-media {
     grid-template-columns: 1fr;
     grid-template-areas: "head" "text" "figure";
     gap: 18px;
