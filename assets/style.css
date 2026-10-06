@@ -351,6 +351,13 @@ h3 {
   white-space: nowrap;
 }
 
+html[data-theme="dark"] .btn.primary { color: #0d1512; }
+
+/* 跟随系统深色、但用户还没手动切过主题的情况 */
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) .btn.primary { color: #0d1512; }
+}
+
 /* ---------------- 列表 ---------------- */
 .list {
   list-style: none;
