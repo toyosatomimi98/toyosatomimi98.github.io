@@ -89,7 +89,7 @@
       <h2>论文</h2>
 
       <ul class="cards">
-        <li class="card">
+        <li class="card card-paper">
           <div class="card-head">
             <h3 class="paper-title">
               <a href="https://arxiv.org/abs/2602.18757" target="_blank" rel="noopener">
@@ -98,21 +98,33 @@
             </h3>
             <span class="tag">ECCV 2026</span>
           </div>
-          <p class="authors">
-            Xiaoru Dong, <strong>Ruiqin Li</strong>, Xiao Han, Zhenxuan Wu, Jiamin Wang,
-            Jian Chen, Qi Jiang, S. M. Yiu, Xinge Zhu, Yuexin Ma
-          </p>
-          <p>
-            提出 Person2Drive：一套个性化端到端自动驾驶的基准与平台。它包含可扩展的个性化
-            驾驶数据采集系统、用 MMD 与 KL 散度量化个人驾驶风格的评估指标，以及一个
-            只微调轨迹预测头就能完成个性化的框架——保留预训练主干，在保证安全的前提下
-            让模型学会「像你一样开车」。
-          </p>
-          <div class="card-links">
-            <a href="https://arxiv.org/abs/2602.18757" target="_blank" rel="noopener">arXiv:2602.18757</a>
-            <span class="dot">·</span>
-            <a href="https://scholar.google.com/citations?user=BtMwZPsAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+
+          <div class="paper-text">
+            <p class="authors">
+              Xiaoru Dong, <strong>Ruiqin Li</strong>, Xiao Han, Zhenxuan Wu, Jiamin Wang,
+              Jian Chen, Qi Jiang, S. M. Yiu, Xinge Zhu, Yuexin Ma
+            </p>
+            <p>
+              提出 Person2Drive：一套个性化端到端自动驾驶的基准与平台。它包含可扩展的个性化
+              驾驶数据采集系统、用 MMD 与 KL 散度量化个人驾驶风格的评估指标，以及一个
+              只微调轨迹预测头就能完成个性化的框架——保留预训练主干，在保证安全的前提下
+              让模型学会「像你一样开车」。
+            </p>
+            <div class="card-links">
+              <a href="https://arxiv.org/abs/2602.18757" target="_blank" rel="noopener">arXiv:2602.18757</a>
+              <span class="dot">·</span>
+              <a href="https://scholar.google.com/citations?user=BtMwZPsAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+            </div>
           </div>
+
+          <!-- 论文主图：取自 arXiv 上的 Figure 1，点击可打开原文 -->
+          <figure class="paper-figure">
+            <a href="https://arxiv.org/abs/2602.18757" target="_blank" rel="noopener">
+              <img src="../assets/person2drive-framework.jpg"
+                   alt="Person2Drive 框架总览：个性化驾驶数据采集、驾驶风格建模，以及端到端模型的风格微调。" />
+            </a>
+            <figcaption>Person2Drive 框架总览。图：Dong et al., ECCV 2026。</figcaption>
+          </figure>
         </li>
       </ul>
     </section>

@@ -52,6 +52,8 @@ python -m http.server 8000
 - 想换水印：用新图片覆盖 `assets/watermark.webp`；深浅改 `assets/style.css` 里的 `--watermark-opacity`（默认 0.07，数字越小越淡）
 - 论文卡片右上角的标签：会议录用就写 `<span class="tag">ECCV 2026</span>`，只是年份
   就写 `<span class="tag">2026</span>`——样式完全一样，只换文字
+- 论文主图：`assets/person2drive-framework.jpg`，取自论文的 Figure 1，在卡片右侧显示；
+  换图就覆盖这个文件（宽高比接近 1:1 效果最好）
 - 想换配色：打开 `assets/style.css`，最上面那几个变量（`--accent` 等）就是主题色
 
 ## 博客

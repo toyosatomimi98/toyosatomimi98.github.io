@@ -337,6 +337,47 @@ h3 {
 .paper-title a { color: var(--text); }
 .paper-title a:hover { color: var(--accent); }
 
+/* 论文卡片：文字在左，主图在右 */
+.card-paper {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  grid-template-areas:
+    "head head"
+    "text figure";
+  gap: 20px 26px;
+  align-items: start;
+}
+
+.card-paper .card-head { grid-area: head; margin-bottom: 0; }
+.card-paper .paper-text { grid-area: text; }
+.card-paper .paper-figure { grid-area: figure; }
+
+.paper-figure { margin: 0; }
+
+.paper-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fff;
+}
+
+.paper-figure figcaption {
+  margin-top: 8px;
+  color: var(--text-soft);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+@media (max-width: 720px) {
+  .card-paper {
+    grid-template-columns: 1fr;
+    grid-template-areas: "head" "text" "figure";
+    gap: 18px;
+  }
+}
+
 .authors {
   font-size: 15px !important;
   color: var(--text-soft);

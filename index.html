@@ -90,7 +90,7 @@
       <h2>Papers</h2>
 
       <ul class="cards">
-        <li class="card">
+        <li class="card card-paper">
           <div class="card-head">
             <h3 class="paper-title">
               <a href="https://arxiv.org/abs/2602.18757" target="_blank" rel="noopener">
@@ -99,22 +99,34 @@
             </h3>
             <span class="tag">ECCV 2026</span>
           </div>
-          <p class="authors">
-            Xiaoru Dong, <strong>Ruiqin Li</strong>, Xiao Han, Zhenxuan Wu, Jiamin Wang,
-            Jian Chen, Qi Jiang, S. M. Yiu, Xinge Zhu, Yuexin Ma
-          </p>
-          <p>
-            Person2Drive is a benchmark and platform for personalized end-to-end autonomous driving.
-            It comes with a data collection system for building personalized driving datasets, metrics
-            based on MMD and KL divergence for quantifying individual driving styles, and a
-            personalization framework that fine-tunes only the trajectory prediction head — so the
-            pretrained backbone stays intact and driving performance is preserved.
-          </p>
-          <div class="card-links">
-            <a href="https://arxiv.org/abs/2602.18757" target="_blank" rel="noopener">arXiv:2602.18757</a>
-            <span class="dot">·</span>
-            <a href="https://scholar.google.com/citations?user=BtMwZPsAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+
+          <div class="paper-text">
+            <p class="authors">
+              Xiaoru Dong, <strong>Ruiqin Li</strong>, Xiao Han, Zhenxuan Wu, Jiamin Wang,
+              Jian Chen, Qi Jiang, S. M. Yiu, Xinge Zhu, Yuexin Ma
+            </p>
+            <p>
+              Person2Drive is a benchmark and platform for personalized end-to-end autonomous driving.
+              It comes with a data collection system for building personalized driving datasets, metrics
+              based on MMD and KL divergence for quantifying individual driving styles, and a
+              personalization framework that fine-tunes only the trajectory prediction head — so the
+              pretrained backbone stays intact and driving performance is preserved.
+            </p>
+            <div class="card-links">
+              <a href="https://arxiv.org/abs/2602.18757" target="_blank" rel="noopener">arXiv:2602.18757</a>
+              <span class="dot">·</span>
+              <a href="https://scholar.google.com/citations?user=BtMwZPsAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+            </div>
           </div>
+
+          <!-- 论文主图：取自 arXiv 上的 Figure 1，点击可打开原文 -->
+          <figure class="paper-figure">
+            <a href="https://arxiv.org/abs/2602.18757" target="_blank" rel="noopener">
+              <img src="assets/person2drive-framework.jpg"
+                   alt="Person2Drive framework: personal driving data collection, driving style modelling, and fine-tuning of an end-to-end model." />
+            </a>
+            <figcaption>Person2Drive framework overview. Figure from Dong et al., ECCV 2026.</figcaption>
+          </figure>
         </li>
       </ul>
     </section>
