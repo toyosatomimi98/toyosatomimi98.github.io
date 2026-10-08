@@ -58,8 +58,8 @@ python -m http.server 8000
   就写 `<span class="tag">2026</span>`——样式完全一样，只换文字
 - 论文主图：`assets/person2drive-framework.jpg`，取自论文的 Figure 1，在卡片右侧显示；
   换图就覆盖这个文件（宽高比接近 1:1 效果最好）
-- 项目主图：`assets/live-interpreter-demo.jpg` 和 `assets/carla-rl-hud.jpg`，分别取自两个
-  仓库 README 里的截图。带主图的卡片用 `class="card card-media"`，标题占整行，
+- 项目主图：`assets/live-interpreter-demo.jpg` 和 `assets/carla-rl-safety-framework.jpg`，
+  分别取自两个仓库 README 的主图。带主图的卡片用 `class="card card-media"`，标题占整行，
   下面是左文右图；窄屏自动变成上下堆叠
 - 想换配色：打开 `assets/style.css`，最上面那几个变量（`--accent` 等）就是主题色
 
