@@ -61,6 +61,7 @@ python -m http.server 8000
 - 项目主图：`assets/live-interpreter-demo.jpg` 和 `assets/carla-rl-safety-framework.jpg`，
   分别取自两个仓库 README 的主图。带主图的卡片用 `class="card card-media"`，标题占整行，
   下面是左文右图；窄屏自动变成上下堆叠
+  （`nice-reading-lens` 的仓库里没有截图，所以那张卡片暂时是纯文字，没有用 `card-media`）
 - 想换配色：打开 `assets/style.css`，最上面那几个变量（`--accent` 等）就是主题色
 
 ## 博客
