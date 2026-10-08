@@ -184,9 +184,10 @@
 
           <div class="card-text">
             <p>
-              A reinforcement learning training and evaluation environment built on the CARLA simulator
-              and Stable-Baselines3, for quickly reproducing experiments and comparing algorithms in
-              driving scenarios.
+              A training and evaluation environment for CARLA 0.10.0 built on Stable-Baselines3, with a
+              control barrier function (CBF) safety filter wrapped around the learned policy: the filter
+              solves a QP at every step to rewrite the action, and barrier violations are folded into
+              the reward.
             </p>
             <div class="card-links">
               <a href="https://github.com/toyosatomimi98/CARLA-SB3-RL-Training-Environment" target="_blank" rel="noopener">View code →</a>

@@ -182,8 +182,8 @@
 
           <div class="card-text">
             <p>
-              基于 CARLA 仿真器和 Stable-Baselines3 的强化学习训练与评估环境，
-              用来快速复现实验、对比不同算法在自动驾驶场景下的表现。
+              基于 CARLA 0.10.0 与 Stable-Baselines3 的训练与评估环境，在策略外面套了一层
+              CBF 安全滤波器：每一步解一次 QP 改写动作，barrier 违反量也写进 reward。
             </p>
             <div class="card-links">
               <a href="https://github.com/toyosatomimi98/CARLA-SB3-RL-Training-Environment" target="_blank" rel="noopener">查看代码 →</a>
